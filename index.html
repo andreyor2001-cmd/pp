@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Planejar e Programar - Consultoria em Planejamento e Qualidade</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Consultoria em planejamento de obras e qualidade industrial. Otimize projetos com SAP PM, Primavera P6 e MS Project.">
+  <link rel="icon" href="/img/icone.png" type="image/png" />
+  <meta name="keywords" content="consultoria em planejamento, obras industriais, parada de manutenção, qualidade industrial, MS Project, Primavera P6, SAP PM, gestão técnica, planejamento de obras, engenharia industrial">
+  <!-- Open Graph para redes sociais -->
+  <meta property="og:title" content="Planejar e Programar - Consultoria em Planejamento e Qualidade">
+  <meta property="og:description" content="Consultoria especializada em obras industriais, paradas, SAP PM, Primavera P6, qualidade e gestão técnica.">
+  <meta property="og:image" content="https://planejareprogramar.com.br/img/logo.png"> <!-- ajuste a URL -->
+  <meta property="og:url" content="https://planejareprogramar.com.br">
+  <meta property="og:type" content="website">
+  <meta http-equiv="Content-Language" content="pt-BR">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="lib/animate/animate.min.css" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Ajuste do logo responsivo na navbar -->
+  <style>
+    .navbar-brand .brand-logo {
+      height: 100px;              /* mobile */
+      width: auto;
+      display: block;
+    }
+    @media (min-width: 768px) {
+      .navbar-brand .brand-logo { height: 130px; } /* tablet */
+    }
+    @media (min-width: 1200px) {
+      .navbar-brand .brand-logo { height: 170px; } /* desktop */
+    }
+    /* Evita que o logo grande quebre o alinhamento vertical */
+    .navbar { padding-top: .5rem; padding-bottom: .5rem; }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s)
+    { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s) }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '329263185422382');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=329263185422382&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Facebook Pixel Code -->
+  <script>!function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1004359188131053'); fbq('track', 'PageView');</script>
+  <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=1004359188131053&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s)
+    { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s) }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '329263185422382');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=329263185422382&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+    <div class="row gx-0 align-items-center">
+      <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+        <div class="d-flex flex-wrap">
+          <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+          <a href="tel:+5527995167570" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+5527995167570</a>
+          <a href="mailto:contato@planejareprogramar.com.br" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>contato@planejareprogramar.com.br</a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center text-lg-end">
+        <div class="d-inline-flex align-items-center" style="height: 45px;">
+          <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+          <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+            <div class="dropdown-menu rounded">
+              <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar & Hero Start -->
+  <div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+      <a href="index.html" class="navbar-brand p-0">
+        <!-- Substitui o H1 por logo responsivo -->
+        <img src="/img/logoslogan.png" alt="Planejar e Programar" class="brand-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">Sobre Nos</a>
+
+          <!-- Dropdown Serviços -->
+          <div class="nav-item dropdown">
+            <a href="service.html" class="nav-link dropdown-toggle" id="servicosMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <div class="dropdown-menu m-0" aria-labelledby="servicosMenu">
+              <a class="dropdown-item" href="servicos/consultoria-planejamento-obras.html">Planejamento de Obras</a>
+              <a class="dropdown-item" href="servicos/pcp-industrial.html">PCP Industrial</a>
+              <a class="dropdown-item" href="servicos/qualidade-documentacao.html">Qualidade & Documentação</a>
+              <a class="dropdown-item" href="servicos/analise-custos.html">Análise de Custos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="service.html">Ver todos os serviços</a>
+            </div>
+          </div>
+
+          <a href="https://blog.planejareprogramar.com.br/" class="nav-item nav-link">Blog</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              Paginas
+            </a>
+            <div class="dropdown-menu m-0">
+              <a href="https://blog.planejareprogramar.com.br/category/dicas/" class="dropdown-item">Dicas</a>
+              <a href="https://blog.planejareprogramar.com.br/category/financeiro/" class="dropdown-item">Financeiro</a>
+              <a href="https://blog.planejareprogramar.com.br/category/ms-project/" class="dropdown-item">MS Project</a>
+              <a href="https://blog.planejareprogramar.com.br/category/tutorial-sap/" class="dropdown-item">Tutorial SAP</a>
+              <a href="https://blog.planejareprogramar.com.br/category/primavera-p6/" class="dropdown-item">Primavera P6</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contato</a>
+        </div>
+        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <!-- Carousel Start -->
+  <div class="header-carousel owl-carousel">
+    <div class="header-carousel-item">
+      <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+      <div class="carousel-caption">
+        <div class="container">
+          <div class="row gy-0 gx-5">
+            <div class="col-lg-0 col-xl-5"></div>
+            <div class="col-xl-7 animated fadeInLeft">
+              <div class="text-sm-center text-md-end">
+                <h4 class="text-primary text-uppercase fw-bold mb-4">Bem-vindo à Planejar e Programar</h4>
+                <h1 class="display-4 text-uppercase text-white mb-4">Consultoria em Planejamento e Qualidade</h1>
+                <p class="mb-5 fs-5">Oferecemos soluções especializadas em planejamento de projetos e gestão de qualidade para garantir a excelência na execução de obras e manutenção.</p>
+                <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                  <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Assista ao Vídeo</a>
+                  <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Saiba Mais</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                  <h2 class="text-white me-2">Siga-nos:</h2>
+                  <div class="d-flex justify-content-end ms-2">
+                    <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61566361382368"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-carousel-item">
+      <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+      <div class="carousel-caption">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-12 animated fadeInUp">
+              <div class="text-center">
+                <h4 class="text-primary text-uppercase fw-bold mb-4">Planejar e Programar</h4>
+                <h1 class="display-4 text-uppercase text-white mb-4">Soluções em Planejamento e Controle</h1>
+                <p class="mb-5 fs-5">Auxiliamos empresas na otimização de processos e gestão de projetos com foco em eficiência e resultados.</p>
+                <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                  <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Assista ao Vídeo</a>
+                  <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Saiba Mais</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <h2 class="text-white me-2">Siga-nos:</h2>
+                  <div class="d-flex justify-content-end ms-2">
+                    <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61566361382368"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+  <!-- Navbar & Hero End -->
+
+  <!-- About Start -->
+  <div class="container-fluid about py-5">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+          <div>
+            <h4 class="text-primary">Sobre Nós</h4>
+            <h1 class="display-5 mb-4">Conheça a Planejar e Programar</h1>
+            <p class="mb-4">Somos uma empresa especializada em consultoria de planejamento e gestão de qualidade para os setores de construção civil e industrial. Nossa missão é otimizar processos, controlar custos e garantir a excelência em todas as etapas dos projetos, proporcionando resultados concretos e soluções inovadoras.</p>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                <div class="d-flex">
+                  <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
+                  <div class="ms-4">
+                    <h4>Consultoria em Planejamento</h4>
+                    <p>Utilizamos ferramentas como MS Project, Primavera P6 e SAP PM para garantir um planejamento preciso e eficaz.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                <div class="d-flex">
+                  <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
+                  <div class="ms-4">
+                    <h4>Anos de Experiência</h4>
+                    <p>Com vasta experiência no mercado, ajudamos empresas a alcançar eficiência operacional e excelência nos resultados.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Descubra Mais</a>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex">
+                  <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                  <div>
+                    <h4>Fale Conosco</h4>
+                    <p class="mb-0 fs-5" style="letter-spacing: 1px;">+55 (27) 99516-7570</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+          <div class="bg-primary rounded position-relative overflow-hidden">
+            <img src="img/about-2.png" class="img-fluid rounded w-100" alt="">
+            <div class="" style="position: absolute; top: -15px; right: -15px;">
+            </div>
+            <div class="" style="position: absolute; top: -20px; left: 10px; transform: rotate(90deg);">
+            </div>
+            <div class="rounded-bottom">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Services Start -->
+  <div class="container-fluid service pb-5">
+    <div class="container pb-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Nossos Serviços</h4>
+        <h1 class="display-5 mb-4">Planejamento, Qualidade e Consultoria Especializada</h1>
+        <p class="mb-0">Na <strong>Planejar e Programar</strong>, unimos experiência técnica e soluções práticas para entregar serviços de excelência em planejamento, controle de qualidade e consultoria estratégica nos setores de construção civil, manutenção industrial, celulose e siderurgia.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Planejamento -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Consultoria em Planejamento">
+            </div>
+            <div class="rounded-bottom p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Consultoria em Planejamento</a>
+              <p class="mb-0">Elaboração de cronogramas executivos, curvas de avanço físico e gestão de escopo, prazo e recursos com ferramentas como MS Project e Primavera P6.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Qualidade -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="Controle de Qualidade">
+            </div>
+            <div class="rounded-bottom p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Controle de Qualidade</a>
+              <p class="mb-0">Implementação de planos de inspeção, elaboração de RQFs, auditorias internas e acompanhamento técnico conforme normas e especificações.</p>
+            </div>
+          </div>
+        </div>
+        <!-- SAP PM -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="Consultoria SAP PM">
+            </div>
+            <div class="rounded-bottom p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Consultoria em SAP PM</a>
+              <p class="mb-0">Configuração, treinamentos e aplicação prática do SAP PM para planejadores de manutenção, com foco em eficiência e controle de ativos industriais.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Recursos -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="Gestão de Recursos">
+            </div>
+            <div class="rounded-bottom p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Gestão de Recursos</a>
+              <p class="mb-0">Dimensionamento de equipes, alocação eficiente de equipamentos, materiais e mão de obra para aumento da produtividade e redução de perdas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Custos -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="img/service-5.jpg" class="img-fluid rounded-top w-100" alt="Consultoria em Orçamentos">
+            </div>
+            <div class="rounded-bottom p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Consultoria em Orçamentos</a>
+              <p class="mb-0">Levantamento quantitativo, definição de composições e cálculo de BDI para formação de preços e orçamentos técnicos em obras e paradas industriais.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Relatórios -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="img/service-6.jpg" class="img-fluid rounded-top w-100" alt="Auditoria e Relatórios">
+            </div>
+            <div class="rounded-bottom p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Auditoria e Relatórios</a>
+              <p class="mb-0">Geração de relatórios analíticos, RDOs, comparativos de avanço e dashboards para medição e tomada de decisão em campo ou escritório.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services End -->
+
+  <!-- Features Start -->
+  <div class="container-fluid feature pb-5">
+    <div class="container pb-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Nossos Diferenciais</h4>
+        <h1 class="display-5 mb-4">Conectando Projetos, Soluções e Pessoas para Resultados Reais</h1>
+        <p class="mb-0">Na <strong>Planejar e Programar</strong>, aplicamos conhecimento técnico e visão estratégica para transformar planejamento e controle em resultados concretos. Atuamos com foco em prazos, qualidade e custo, sempre alinhados às necessidades do cliente e à realidade do campo.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="feature-item p-4">
+            <div class="feature-icon p-4 mb-4">
+              <i class="fas fa-project-diagram fa-4x text-primary"></i>
+            </div>
+            <h4>Gestão Estratégica de Projetos</h4>
+            <p class="mb-0">Desenvolvimento de cronogramas técnicos, integração de disciplinas e acompanhamento sistemático de metas físicas e financeiras.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="feature-item p-4">
+            <div class="feature-icon p-4 mb-4">
+              <i class="fas fa-cogs fa-4x text-primary"></i>
+            </div>
+            <h4>Otimização de Recursos</h4>
+            <p class="mb-0">Gerenciamento assertivo de equipes, materiais e equipamentos, com foco em produtividade, segurança e redução de desperdícios.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="feature-item p-4">
+            <div class="feature-icon p-4 mb-4">
+              <i class="fas fa-chart-bar fa-4x text-primary"></i>
+            </div>
+            <h4>Controle de Qualidade</h4>
+            <p class="mb-0">Implantação de rotinas de inspeção, verificação técnica e elaboração de relatórios com base em normas e exigências contratuais.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="feature-item p-4">
+            <div class="feature-icon p-4 mb-4">
+              <i class="fas fa-laptop-code fa-4x text-primary"></i>
+            </div>
+            <h4>Domínio de Ferramentas Digitais</h4>
+            <p class="mb-0">Utilização de softwares como MS Project, Primavera P6, Excel avançado, AutoCAD e sistemas integrados para planejamento, controle e análise de projetos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features End -->
+
+  <!-- Offer Start -->
+  <div class="container-fluid offer-section pb-5">
+    <div class="container pb-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Nossas Ofertas</h4>
+        <h1 class="display-5 mb-4">Soluções Técnicas que Geram Resultados</h1>
+        <p class="mb-0">Na <strong>Planejar e Programar</strong>, entregamos soluções integradas que aumentam a produtividade e a previsibilidade dos seus projetos. Atuamos com foco em qualidade, eficiência operacional e tomada de decisão baseada em dados.</p>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="nav nav-pills bg-light rounded p-5">
+            <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+              <h5 class="mb-0">Consultoria em Planejamento de Projetos</h5>
+            </a>
+            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+              <h5 class="mb-0">Otimização de Custos e Recursos</h5>
+            </a>
+            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+              <h5 class="mb-0">Gestão de Qualidade e Conformidade</h5>
+            </a>
+            <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
+              <h5 class="mb-0">Tecnologia Aplicada à Gestão</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+          <div class="tab-content">
+            <!-- Planejamento -->
+            <div id="collapseOne" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div class="col-md-7">
+                  <img src="img/offer-1.jpg" class="img-fluid w-100 rounded" alt="Consultoria em Planejamento">
+                </div>
+                <div class="col-md-5">
+                  <h1 class="display-6 mb-4">Consultoria em Planejamento de Projetos</h1>
+                  <p class="mb-0">Apoiamos empresas na criação de cronogramas detalhados, estrutura analítica de projetos (EAP), curvas de avanço físico e integração entre áreas técnicas, desde a concepção até a entrega final.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Custos -->
+            <div id="collapseTwo" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-md-7">
+                  <img src="img/offer-2.jpg" class="img-fluid w-100 rounded" alt="Otimização de Custos">
+                </div>
+                <div class="col-md-5">
+                  <h1 class="display-6 mb-4">Otimização de Custos e Recursos</h1>
+                  <p class="mb-0">Realizamos estudos de produtividade, análise de desperdícios e alocação inteligente de mão de obra e materiais para maximizar o retorno sobre o investimento do seu projeto.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Qualidade -->
+            <div id="collapseThree" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-md-7">
+                  <img src="img/offer-3.jpg" class="img-fluid w-100 rounded" alt="Gestão de Qualidade">
+                </div>
+                <div class="col-md-5">
+                  <h1 class="display-6 mb-4">Gestão de Qualidade e Conformidade</h1>
+                  <p class="mb-0">Implementamos rotinas de inspeção, elaboração de RQFs, checklists e relatórios de não conformidade, garantindo aderência às normas e contratos técnicos.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Softwares -->
+            <div id="collapseFour" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-md-7">
+                  <img src="img/offer-4.jpg" class="img-fluid w-100 rounded" alt="Tecnologia em Projetos">
+                </div>
+                <div class="col-md-5">
+                  <h1 class="display-6 mb-4">Tecnologia Aplicada à Gestão</h1>
+                  <p class="mb-0">Utilizamos softwares como MS Project, Primavera P6, AutoCAD e ERPs para apoiar a gestão de cronogramas, recursos, manutenção e controle de obras com precisão e agilidade.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Of
+
+  <!-- Blog Start -->
+  <div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width: 800px;">
+        <h4 class="text-primary">Nosso Blog & Notícias</h4>
+        <h1 class="display-5 mb-4">Artigos Para Profissionais de Planejamento</h1>
+        <p class="mb-0">Explore nossos artigos e insights sobre planejamento de projetos, otimização de recursos e tendências do setor.</p>
+      </div>
+      <div class="owl-carousel blog-carousel wow fadeInUp">
+        <!-- Boas Práticas Manutenção OEM -->
+        <div class="blog-item p-4">
+          <div class="blog-img mb-4">
+            <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Manutenção OEM">
+            <div class="blog-title">
+              <a href="https://blog.planejareprogramar.com.br/boas-praticas-na-manutencao-oem/" class="btn">Manutenção OEM</a>
+            </div>
+          </div>
+          <a href="https://blog.planejareprogramar.com.br/boas-praticas-na-manutencao-oem/" class="h4 d-inline-block mb-3">Boas Práticas na Manutenção OEM</a>
+          <p class="mb-4">Entenda como otimizar a durabilidade e segurança dos equipamentos seguindo recomendações de fabricantes...</p>
+        </div>
+        <!-- 10 Dicas Qualidade -->
+        <div class="blog-item p-4">
+          <div class="blog-img mb-4">
+            <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Qualidade no Projeto">
+            <div class="blog-title">
+              <a href="https://blog.planejareprogramar.com.br/10-dicas-para-garantir-a-qualidade-no-projeto/" class="btn">Qualidade de Projeto</a>
+            </div>
+          </div>
+          <a href="https://blog.planejareprogramar.com.br/10-dicas-para-garantir-a-qualidade-no-projeto/" class="h4 d-inline-block mb-3">10 Dicas para Garantir a Qualidade no Projeto</a>
+          <p class="mb-4">Confira orientações práticas para assegurar padrões técnicos, evitar retrabalho e reduzir custos...</p>
+        </div>
+        <!-- Qualidade na Indústria -->
+        <div class="blog-item p-4">
+          <div class="blog-img mb-4">
+            <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Qualidade na Indústria">
+            <div class="blog-title">
+              <a href="https://blog.planejareprogramar.com.br/garantindo-a-qualidade-na-industria-estrategias-e-boas-praticas/" class="btn">Qualidade Industrial</a>
+            </div>
+          </div>
+          <a href="https://blog.planejareprogramar.com.br/garantindo-a-qualidade-na-industria-estrategias-e-boas-praticas/" class="h4 d-inline-block mb-3">Garantindo a Qualidade na Indústria</a>
+          <p class="mb-4">Explore estratégias para implementar padrões de excelência e competitividade na indústria...</p>
+        </div>
+        <!-- Auditoria Interna -->
+        <div class="blog-item p-4">
+          <div class="blog-img mb-4">
+            <img src="img/service-4.jpg" class="img-fluid w-100 rounded" alt="Auditoria Interna">
+            <div class="blog-title">
+              <a href="https://blog.planejareprogramar.com.br/como-realizar-uma-auditoria-no-proprio-projeto-garantindo-qualidade-e-eficiencia/" class="btn">Auditoria Interna</a>
+            </div>
+          </div>
+          <a href="https://blog.planejareprogramar.com.br/como-realizar-uma-auditoria-no-proprio-projeto-garantindo-qualidade-e-eficiencia/" class="h4 d-inline-block mb-3">Como Realizar uma Auditoria no Próprio Projeto</a>
+          <p class="mb-4">Um guia para profissionais melhorarem processos, garantir qualidade e eficiência em projetos...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+
+  <!-- FAQs Start -->
+  <div class="container-fluid faq-section pb-5">
+    <div class="container pb-5 overflow-hidden">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">FAQs</h4>
+        <h1 class="display-5 mb-4">Perguntas Frequentes</h1>
+        <p class="mb-0">Confira abaixo as dúvidas mais comuns sobre nossos serviços. Caso precise de mais informações, nossa equipe está pronta para atendê-lo.</p>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="accordion accordion-flush bg-light rounded p-5" id="accordionFlushSection">
+            <!-- FAQ 1 -->
+            <div class="accordion-item rounded-top">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Quais serviços a Planejar e Programar oferece?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
+                <div class="accordion-body">
+                  Atendemos com consultoria em planejamento e controle de produção, gestão da qualidade, treinamentos técnicos e suporte na utilização de ferramentas como MS Project, SAP PM, Excel avançado e Primavera P6.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Como posso solicitar um orçamento?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushSection">
+                <div class="accordion-body">
+                  Você pode solicitar um orçamento pelo formulário na página de contato ou enviar um e-mail com detalhes sobre seu projeto. Em seguida, realizamos uma análise técnica e elaboramos uma proposta sob medida.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Quais são os benefícios de um bom planejamento de obras?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                <div class="accordion-body">
+                  Um planejamento bem estruturado reduz retrabalho, melhora o uso de recursos, evita atrasos e assegura previsibilidade financeira, contribuindo diretamente para o sucesso do empreendimento.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  A Planejar e Programar oferece treinamentos?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
+                <div class="accordion-body">
+                  Sim. Ministramos treinamentos práticos voltados a equipes de campo, engenheiros e analistas, abordando planejamento, controle de qualidade e ferramentas digitais aplicadas à rotina de obras e manutenção.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Como funciona a consultoria de qualidade?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushSection">
+                <div class="accordion-body">
+                  Atuamos com diagnóstico dos processos, implantação de rotinas de verificação técnica, padronização de documentos e treinamentos voltados à melhoria contínua e atendimento às normas contratuais.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="accordion-item rounded-bottom">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Qual o prazo para entrega de um projeto?
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
+                <div class="accordion-body">
+                  O prazo depende da complexidade e do escopo do serviço. Após o briefing inicial, definimos e apresentamos um cronograma detalhado com marcos e entregas previstas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+          <div class="bg-primary rounded">
+            <img src="img/about-2.png" class="img-fluid w-100" alt="Imagem sobre Planejamento e Qualidade">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQs End -->
+
+  <!-- Testimonial Start -->
+  <!-- (seção preservada conforme arquivo de origem; vazia no snippet) -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgba(255, 255, 255, 0.08);">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-6 col-xl-4">
+          <div class="footer-item">
+            <a href="index.html" class="p-0">
+              <h4 class="text-white"><i class="fas fa-tools me-3"></i>Planejar e Programar</h4>
+            </a>
+            <p class="mb-4">Consultoria especializada em planejamento, controle de produção, qualidade e gestão técnica para construção civil e industrial. Soluções sob medida para seus desafios.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-2">
+          <div class="footer-item">
+            <h4 class="text-white mb-4">Links Úteis</h4>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Sobre Nós</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Serviços</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Blog</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Contato</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Treinamentos</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item">
+            <h4 class="text-white mb-4">Suporte</h4>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Política de Privacidade</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Termos & Condições</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>FAQ</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i>Ajuda e Suporte</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item">
+            <h4 class="text-white mb-4">Fale Conosco</h4>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-map-marker-alt text-primary me-3"></i>
+              <p class="text-white mb-0">Aracruz - ES, Brasil</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-envelope text-primary me-3"></i>
+              <p class="text-white mb-0">contato@planejareprogramar.com.br</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa fa-phone-alt text-primary me-3"></i>
+              <p class="text-white mb-0">(27) 99516-7570</p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fab fa-chrome text-primary me-3"></i>
+              <p class="text-white mb-0">www.planejareprogramar.com.br</p>
+            </div>
+            <div class="d-flex">
+              <a class="btn btn-primary btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+              <a class="btn btn-primary btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-instagram text-white"></i></a>
+              <a class="btn btn-primary btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+              <a class="btn btn-primary btn-sm-square rounded-circle" href="#"><i class="fab fa-whatsapp text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-md-0">
+          <span class="text-white">
+            © <strong>Planejar e Programar</strong> - Todos os direitos reservados.
+          </span>
+        </div>
+        <div class="col-md-6 text-center text-md-end text-white">
+          Desenvolvido por <a class="border-bottom text-white" href="https://planejareprogramar.com.br" target="_blank">Planejar e Programar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRTRLV4JFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SRTRLV4JFN');
+  </script>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5527995167570" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      left: 20px; /* <-- ALTERADO de right: 20px para left: 20px */
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-icon {
+      margin-top: 14px;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebc59;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+      }
+
+      .whatsapp-icon {
+        margin-top: 12px;
+      }
+    }
+  </style>
+
+</body>
+
+</html>

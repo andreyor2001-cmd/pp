@@ -1,0 +1,10 @@
+RewriteCond %{HTTP_HOST} ^planejareprogramar.site$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.planejareprogramar.site$
+RewriteRule ^(.*)$ https://planejareprogramar.com.br/$1 [L,R=301]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Defina o pacote “alt-php81” como a linguagem padrão de programação “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-alt-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
